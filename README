@@ -1,0 +1,40 @@
+JavaRL Tutorial README:
+=======================
+
+This archive is designed to present the basics of JavaRL.
+
+The main references in this archive are java-pres.pdf
+and tut.sh. The PDF contains high-level information about
+how JavaRL works. The file tut.sh contains more specific
+information about how to configure and run the JavaRL tool.
+
+NOTE-1: JavaRL currently doesn't run on Windows.
+NOTE-2: JavaRL requires a working Java Virtual Machine (JVM)
+        on your machine. Thus, you should first download
+        and install the JVM, available from:
+
+        https://www.oracle.com/java/index.html
+
+        or from your linux distribution's package manager.
+NOTE-3: JavaRL must be configured first or it will crash.
+        Consult the file tut.sh in this distribution for
+        more information.
+NOTE-4: The JavaRL parser is, unfortunately, not very
+        robust. Thus, check your properties you want to
+        verify carefully. See further notes in tut.sh.
+
+Contents of the archive containing this tutorial:
+
+  README              -    This file                                                                 
+  javafan-pres.pdf    -    A PDF file containing information about the JavaRL semantics/tool
+  tut.sh              -    A bash script which contains sample JavaRL invocations and documentation
+  java-rl-spec/       -    Folder containing Java semantics in Maude
+  javarl/             -    Folder containing utility to convert Java code into Maude code
+  HelloWorld.java     -    Java file containing Hello World program
+  rw.java             -    Java file containing definition of a safely shared variable (with a mutex)
+  Sum.java            -    Java file containing program that sums naturals from 0 to 100
+  Sum.prop            -    Property file used by JavaRL tool for model-checking Sum.java
+  Sum2.prop           -    Another property file for model-checking Sum.java
+  rw.prop             -    A third property file for model-checking rw.java
+
+Feel free to send any questions you have to the course TA.

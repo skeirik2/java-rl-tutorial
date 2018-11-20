@@ -1,0 +1,3 @@
+atom readers: data@rnum > 0 
+atom writers: data@wnum > 0
+formula: [](~(( readers) \/ ( writers)))

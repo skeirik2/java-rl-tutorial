@@ -1,0 +1,2 @@
+atom condition: Sum.sum == 1
+formula: <> condition
